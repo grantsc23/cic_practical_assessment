@@ -74,7 +74,7 @@ Use the code template of **cic_practical_ass_001** to complete this task.
 Volkswagen provides a service called Guaranteed Future Value: A vehicle is provided to a customer at a low price. The condition is that the vehicle has to be returned after 3 years with less than 45000 KM. If the customer is in danger of breeching his/her contract, a warning has to be flagged against his profile and a call has to be made to the customer.
 
 In the Repo there is a file called GFV Assessment Data.csv.
-
+All the vehicles has been serviced on the 15th of December 2020.
 Complete the application to display the data in this file in a Bootstrap table.
 The React Component ***VehicleTable*** should be completed:
 

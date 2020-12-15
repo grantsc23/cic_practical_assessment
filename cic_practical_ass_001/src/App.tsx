@@ -6,9 +6,15 @@ import Papa from 'papaparse';
 import moment from 'moment';
 
 
+interface IServiceItem {
+  "Brand Indicator": string;
+  "Nav: Model Descripti": string;
+  "New Vehicle Delivery": Date;
+  "Reading": string;
+  "VIN": string;
+}
 
-
-const VehicleTable: React.FC<{ data: Array<any> }> = (props) => {
+const VehicleTable: React.FC<{ data: Array<IServiceItem> }> = (props) => {
   return (
     <Table>
       {/** TODO: CODE COMES HERE */}
@@ -35,8 +41,8 @@ const App: React.FC = () => {
 
         var value = input[key];
         // Check for string properties which look like dates.
-        if (typeof value === "string" && (moment(value, 'dd.MM.yyyy').isValid())) {
-          input[key] = moment(value, 'dd.MM.yyyy').toDate();
+        if (typeof value === "string" && (moment(value, 'DD.MM.YYYY', true).isValid())) {
+          input[key] = moment(value, 'DD.MM.YYYY').toDate();
         } else if (typeof value === "object") {
           // Recurse into object
           convertDateStringsToDates(value);
