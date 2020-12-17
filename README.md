@@ -56,7 +56,7 @@ Write a SQL query that will join these two tables by the **QUIZ_ID** field. Retu
 
 ***NOTE:*** if the RSTATUS is inactive, the record is disregarded by the user I.E deleted. Filter out all Inactive RSTATUS in both tables.
 
-Your query should be completed query the query string is set to empty:
+Your query should be inserted here:
 ```JavaScript
 const query = `
     --Query comes here--
