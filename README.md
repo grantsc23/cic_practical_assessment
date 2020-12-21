@@ -88,6 +88,6 @@ const VehicleTable: React.FC<{ data: Array<any> }> = (props) => {
 };
 ```
 
-Display all fields in the data array, and an extra field that show if a warning flagged or not. The warning should be a green tick if it is lower than the Average Mileage its suppose to be or a Cross if its exceeding the average mileage.
+Display all fields in the data array, and an extra field that show if a warning flagged or not. This field should be called 'Acceptable Millage' and contain a green tick if it is lower than the Average Mileage its suppose to be or a Red Cross if its exceeding the average mileage.
 
 ***IMPORTANT:*** in order to acheive this you need to calculate the daily recommend mileage, multiplied by how long the customer had the car till the service date, then compare that to the recorded mileage.
