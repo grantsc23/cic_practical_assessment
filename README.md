@@ -71,7 +71,7 @@ const query = `
 Use the code template of **cic_practical_ass_001** to complete this task.
 
 ### GFV
-Volkswagen provides a service called Guaranteed Future Value: A vehicle is provided to a customer at a low price. The condition is that the vehicle has to be returned after 3 years with less than 45000 KM. If the customer is in danger of breeching his/her contract, a warning has to be flagged against his profile and a call has to be made to the customer.
+Volkswagen provides a service called Guaranteed Future Value: A vehicle is provided to a customer at a low price. The condition is that the vehicle has to be returned after 3 years with less than 45000 KM. If the customer is in danger of breeching his/her contract, a warning has to be flagged against his profile.
 
 In the Repo there is a file called GFV Assessment Data.csv.
 All the vehicles has been serviced on the 15th of December 2020.
@@ -88,6 +88,5 @@ const VehicleTable: React.FC<{ data: Array<any> }> = (props) => {
 };
 ```
 
-Display all fields in the data array, and an extra field that show if a warning flagged or not. This field should be called 'Acceptable Millage' and contain a green tick if it is lower than the Average Mileage its suppose to be or a Red Cross if its exceeding the average mileage.
-
-***IMPORTANT:*** in order to acheive this you need to calculate the daily recommend mileage, multiplied by how long the customer had the car till the service date, then compare that to the recorded mileage.
+The calulation needs to take into account the average mileage from New Vehicle delivery to service date.
+Display all fields in the data array, and an extra field to show if the customer is with in the required mileage or not. This field should be called 'Acceptable Mileage'and contains a green tick if it is lower than the ***average daily mileage***, or a Red Cross if it exceeds the ***average daily mileage***.
